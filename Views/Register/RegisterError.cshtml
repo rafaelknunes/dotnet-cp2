@@ -1,0 +1,25 @@
+﻿@model FIAP_MVC.DTOs.RegisterDTO
+
+@{
+    ViewData["Title"] = "Erro no Registro";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<h3>Dados Submetidos</h3>
+<div>
+    <p><strong>Username:</strong> @Model.UserName</p>
+    <p><strong>Email:</strong> @Model.UserEmail</p>
+    <p><strong>Phone:</strong> @Model.UserPhone</p>
+</div>
+
+<div>
+    <a asp-controller="Register" asp-action="Index" class="btn btn-primary">Tentar novamente</a>
+</div>

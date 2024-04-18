@@ -9,6 +9,6 @@ namespace FIAP_MVC.Data
         }
 
         public DbSet<User> MVC_Users { get; set; }
-        public DbSet<Spell> MVC_Spells { get; set; }
+
     }
 }

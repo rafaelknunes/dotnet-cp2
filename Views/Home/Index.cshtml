@@ -1,24 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Checkpoint 2 - ADVANCED BUSINESS DEVELOPMENT WITH .NET";
 }
 
 <div class="text-center">
+    <h1 class="display-4">Checkpoint 2 - MVC + DbContext</h1>
+</div>
 
-    <form asp-controller="Home" asp-action="Register" method="post">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input name="UserEmail" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
+<div class="container">
+    <section>
+        <h2>Autor</h2>
+        <p><strong>Rafael Klanfer Nunes</strong></p>
+        <p>RM: 99791</p>
+        <p>Turma: TDS-A 2024</p>
+    </section>
 
-        <input name="UserName" class="form-control form-control-lg" type="text" placeholder="UserName">
-        <input name="UserPhone" class="form-control form-control-lg" type="text" placeholder="Phone">
+    <section>
+        <h2>Descrição do Projeto</h2>
+        <p>Este projeto foi desenvolvido como parte da disciplina ADVANCED BUSINESS DEVELOPMENT WITH .NET e visa criar uma aplicação MVC robusta usando .net core 7.0 ou superior. A aplicação inclui funcionalidades essenciais para gestão de usuários e dados, com foco em práticas de desenvolvimento avançado.</p>
+    </section>
 
-        <label for="inputPassword5" class="form-label">Password</label>
-        <input name="UserPassword" type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-        <div id="passwordHelpBlock" class="form-text">
-            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-        </div>
-        <button type="submit">Cadastrar</button>
-    </form>
+    <section>
+        <h2>Funcionalidades</h2>
+        <ul>
+            <li><strong>Validar Login:</strong> Implementação de um método READ para buscar por email e comparar senha.</li>
+            <li><strong>Cadastro de Usuários:</strong> Um método CREATE para registrar novos usuários no sistema.</li>
+            <li><strong>Conexão com Banco de Dados:</strong> Uma conexão funcional com o banco de dados para operações CRUD.</li>
+            <li><strong>CRUD Completo:</strong> Desenvolvimento de operações CRUD completas para gestão de dados.</li>
+            <li><strong>Controller Funcional:</strong> Desenvolvimento de uma controller adicional com funcionalidades de CRUD além das básicas.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Entrega e Avaliação</h2>
+        <p>O projeto é avaliado com base na funcionalidade, design de código e a aderência aos requisitos especificados, incluindo a entrega através de um link do GitHub e a implementação correta das operações de banco de dados.</p>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <p>Para mais informações sobre o projeto ou dúvidas, entre em contato:</p>
+        <p>Email: rm99791@fiap.com.br</p>
+        <a href="https://github.com/rafaelknunes/dotnet-cp2" target="_blank" rel="noopener noreferrer">Projeto no GitHub</a>
+    </section>
+
 
 </div>

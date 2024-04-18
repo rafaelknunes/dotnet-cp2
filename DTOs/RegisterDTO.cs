@@ -17,7 +17,7 @@ namespace FIAP_MVC.DTOs
         public string UserPassword { get; set; } 
 
         [DataType(DataType.Password)]
-        [Compare("UserPassword", ErrorMessage = "Senhas iguais")]
+        [Compare("UserPassword", ErrorMessage = "Senhas devem ser iguais")]
         public string ComparePassword { get; set; } 
 
         public string UserPhone { get; set; } 

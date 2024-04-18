@@ -1,0 +1,25 @@
+﻿@model FIAP_MVC.DTOs.RegisterDTO
+
+@{
+    ViewData["Title"] = "Cadastro Concluído";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (ViewBag.SuccessMessage != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.SuccessMessage
+    </div>
+}
+
+<h3>Dados do Registro</h3>
+<div>
+    <p><strong>Username:</strong> @Model.UserName</p>
+    <p><strong>Email:</strong> @Model.UserEmail</p>
+    <p><strong>Phone:</strong> @Model.UserPhone</p>
+</div>
+
+<div>
+    <a asp-controller="Account" asp-action="Index" class="btn btn-primary">Fazer Login</a>
+</div>
