@@ -24,3 +24,21 @@ A aplicação deverá ter ao menos uma controller HOME e uma de usuários (Login
 
 ---
 
+# Atenção
+
+Arquivo appsettings.json foi ocultado no Git. Por favor, crie o seu com a estrutura:
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "OracleConnection": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521))) (CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)));User Id=SEURM;Password=SUASENHA;"
+  }
+}
+````
