@@ -74,7 +74,8 @@ namespace FIAP_MVC.Controllers
                 user.UserPhone = phone;
                 _dataContext.SaveChanges();
                 TempData["SuccessMessage"] = "Telefone atualizado com sucesso!";
-                return RedirectToAction("UserProfile", new { id = user.Id });
+                //return RedirectToAction("UserProfile", new { id = user.Id });
+                return View("LoginSuccess");
             }
             TempData["ErrorMessage"] = "Usuário não encontrado.";
             return RedirectToAction("Index");
